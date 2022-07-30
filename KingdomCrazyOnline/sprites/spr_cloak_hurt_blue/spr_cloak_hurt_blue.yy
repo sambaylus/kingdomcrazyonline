@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Cloak Kid",
-    "path": "folders/Characters/Cloak Kid.yy",
+    "name": "Blue",
+    "path": "folders/Characters/Cloak Kid/Blue.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_cloak_hurt_blue",

@@ -1,12 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-master_gain = 1;
+master_gain = 0;
 
 playing_sounds = []
 
-play_music = function(_soundid) {
-	return audio_play_sound(_soundid, 0, true);
+play_music = function(_soundid, _gain = 1) {
+	var _sound = audio_play_sound(_soundid, 0, true);
+	var _soundid_gain = audio_sound_get_gain(_soundid);
+	audio_sound_gain(_sound, master_gain * _soundid_gain * _gain, 0);
+
+	return _sound;
 }
 
 play = function(_soundid, _pitch = 1, _gain = 1) 

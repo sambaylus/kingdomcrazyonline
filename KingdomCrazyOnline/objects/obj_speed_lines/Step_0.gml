@@ -9,7 +9,15 @@ if timer = 0
 
 if timer mod 3 == 0
 {
-	choose(0,1);
-	//image_xscale = choose(1, -1);
-	//image_yscale = choose(1, -1);
+	//choose(0,1);
+	var _switch = (rollback_current_frame mod 2 == 0);
+	if _switch
+		image_xscale = 1;
+	else
+		image_xscale = -1;
+	_switch = (rollback_current_frame mod 3 == 0);
+	if _switch
+		image_yscale = 1;
+	else
+		image_yscale = -1;
 }

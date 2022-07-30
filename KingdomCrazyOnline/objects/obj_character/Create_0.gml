@@ -17,8 +17,9 @@ xfriction = .1;
 yspeed = 0;
 yspeed_gravity = .25;
 
-move_speed = .5;
-move_speed_max = 3;
+move_speed = .35;
+move_speed_default = 1;
+move_speed_max = move_speed_default;
 
 jump_speed = 5;
 
@@ -34,7 +35,8 @@ can_jump = function(_jump_speed = jump_speed)
 	and input_jump
 	{
 		effect_create(x, y, spr_effect_jump);
-		jump(_jump_speed);	
+		jump(_jump_speed);
+		state.change("idle");
 	}
 }
 
@@ -123,7 +125,9 @@ physics_update = function() {
 	else
 		grounded = false;
 	
-	xspeed = xmove + xpush;
+	var _xmove = xmove;
+	
+	xspeed = _xmove + xpush;
 	
 	if xmove < 0
 		facing = -1;
@@ -133,7 +137,7 @@ physics_update = function() {
 	xmove *= xfriction;
 	if grounded
 		xpush *= xfriction;
-		
+	
 	// Does this go here?
 	sprite.x_scale = facing;
 	

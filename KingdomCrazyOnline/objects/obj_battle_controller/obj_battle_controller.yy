@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Battle1",
-    "path": "folders/Stages/Battle1.yy",
+    "path": "folders/Scenes/Stages/Battle1.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_battle_controller",

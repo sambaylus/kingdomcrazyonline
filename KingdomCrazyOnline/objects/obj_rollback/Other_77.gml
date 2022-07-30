@@ -4,5 +4,5 @@
 if rollback_event_param.first_start == true
 {
 	obj_rollback_settings.player_local = rollback_event_param.player_id;	
-	room_goto(rm_battle1);
+	room_goto(rm_battle);
 }

@@ -11,9 +11,14 @@ enum Battle_Modes
 	intro,
 	ready,
 	fight,
+	victory,
 	time,
 	ko,
 	length
 }
 
 mode = Battle_Modes.intro;
+winner = "";
+winner_color = "";
+
+mode_counter = 0;

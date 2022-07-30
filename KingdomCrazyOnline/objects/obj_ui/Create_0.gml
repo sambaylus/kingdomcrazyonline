@@ -12,10 +12,16 @@ height = sprite_height;
 
 on_click = function() {
 	action();
+	SOUND.play(snd_confirm);
 }
 
 action = function(){};
-on_hover_enter = function(){};
-on_hover_exit = function(){};
+on_hover_enter = function(){
+SOUND.play(snd_cursor, 1.2);
+};
+on_hover_exit = function(){
+SOUND.play(snd_cursor, .8)
+
+};
 
 active = true;

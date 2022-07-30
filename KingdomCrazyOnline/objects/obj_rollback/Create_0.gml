@@ -1,14 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-show_debug_message("ROLLBACK OBJECT CREATED!");
-
 input         = 
 {
-	"left"    : [vk_left],
-	"right"   : [vk_right],
-	"pickup"  : [ord("X")],
-	"jump"    : [ord("Z")]
+	"left"    : [vk_left, gp_padl, gp_axislh],
+	"right"   : [vk_right, gp_padr],
+	"pickup"  : [ord("X"), gp_face1],
+	"jump"    : [ord("Z"), gp_face2],
+	"emote1"  : [ord("1")],
+	"emote2"  : [ord("2")],
+	"emote3"  : [ord("3")]
 }
 
 rollback_define_input(input);

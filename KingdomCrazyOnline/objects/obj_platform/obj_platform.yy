@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_block_B",
-    "path": "sprites/spr_block_B/spr_block_B.yy",
+    "name": "spr_block",
+    "path": "sprites/spr_block/spr_block.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

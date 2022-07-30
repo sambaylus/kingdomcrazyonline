@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Battle",
-    "path": "folders/Stages/Battle.yy",
+    "name": "UI",
+    "path": "folders/Scenes/Stages/UI.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ui_ready",

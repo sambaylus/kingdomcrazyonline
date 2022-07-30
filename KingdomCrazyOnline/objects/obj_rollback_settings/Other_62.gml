@@ -13,7 +13,6 @@ if ds_map_find_value(async_load, "id") == request_regions
 	    for (var i = 0; i < _num_regions; i++)
 	    {
 	        region_list[i] = _data[i];
-			show_debug_message(region_list[i]);
 	    }
 	
 		on_regions_receive();
